@@ -1,0 +1,6 @@
+tortoise-orm
+uvicorn
+sqlalchemy 
+pymysql
+passlib
+pyjwt
