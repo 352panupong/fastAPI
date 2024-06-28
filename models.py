@@ -13,9 +13,7 @@ class User(Base):
     phone = Column(String(10))
     address = Column(String(200))
     city = Column(String(45))
-    created_at = Column(DateTime)
-    
-    
+    created_at = Column(DateTime)    
 
 class Role(Base):
     __tablename__ = "roles"
@@ -24,4 +22,11 @@ class Role(Base):
     role_name = Column(String(45))
     created_at = Column(DateTime)
     status = Column(Boolean)
+    
+    
+class User_has_role(Base):
+    __tablename__ = "user_has_role"
+    
+    user_id = Column(Integer, primary_key=True, nullable=False)
+    role_id = Column(Integer, primary_key=True, nullable=False)
     
