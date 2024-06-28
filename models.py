@@ -30,3 +30,12 @@ class User_has_role(Base):
     user_id = Column(Integer, primary_key=True, nullable=False)
     role_id = Column(Integer, primary_key=True, nullable=False)
     
+class user_has_project(Base):
+    __tablename__ = "user_has_project"
+    
+    project_id = Column(Integer, primary_key =True, nullable=False, index=True )
+    project_name = Column(String, nullable=False)
+    user_id = Column(Integer, primary_key=True, nullable=False),
+    decription = Column(String(255), nullable=True)
+    created_at = Column(DateTime)
+    

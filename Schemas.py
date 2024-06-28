@@ -30,3 +30,8 @@ class TokenData(BaseModel):
 class user_has_role(UserBase):
     user_id : int
     role_id : int
+    
+class user_has_project(UserBase):
+    user_id :  int
+    project_name : str
+    description : str
